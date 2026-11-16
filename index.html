@@ -1,0 +1,2348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--320-->
+    <link rel="stylesheet"  href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<style>
+@font-face {
+    font-family: KFGQPC Uthman Taha Naskh Bold;
+    src: url("font.ttf")
+}
+#t{text-align:justify; line-height:1.7;}
+#t h3 { padding-bottom: 5px;     padding-top: 5px;     font-size: 21px;
+    text-align: center;   border-style: solid;
+  border-bottom: double #666;     border-top: double;     border-left: 0px;  border-right: 0px;  border-center: 0px;
+     border-radius: 0px;         font-family: "sans;georgia;arial" }
+h3 { padding-bottom: 5px;     padding-top: 5px;     font-size: 21px;
+    text-align: center;    border-style: solid;
+  border-bottom: double #666;     border-top: double;     border-left: 0px;  border-right: 0px;  border-center: 0px;
+     border-radius: 0px;         font-family: "sans;georgia;arial" }
+img{max-width:100%;}
+.arab{font-size:25px;line-height: 2;direction:rtl;text-align:justify}
+
+body,html {
+	font-family: KFGQPC Uthman Taha Naskh Bold, sans, open sans, sans-serif, arial, helvetica;
+	font-size: 18px;
+	color: #000;
+	background-color:#fff;
+
+}
+</style>
+<body>
+<div data-role="page" id="halutama">
+
+    <div data-role="content">
+        <div class="choice_list">
+            <h3>Kosakata Bahasa Arab</h3>
+            <ul data-role="listview" data-divider-theme="b" data-filter-placeholder="kosa kata ..." data-inset="true" data-filter="true">
+                <li><a href="#hitungan" rel="external">1. Hitungan</a></li>
+                <li><a href="#keluarga" rel="external">2. Anggota Keluarga</a></li>
+                <li><a href="#warna" rel="external">3. Warna</a></li>
+                <li><a href="#tubuh" rel="external">4. Anggota Tubuh</a></li>
+                <li><a href="#katakerja" rel="external">5. Fi'il (kata kerja)</a></li>
+                <li><a href="#minuman" rel="external">6. Makanan dan minuman</a></li>
+                <li><a href="#ukuran" rel="external">7. Ukuran</a></li>
+                <li><a href="#sekrumah" rel="external">8. Sekitar rumah</a></li>
+                <li><a href="#fasilitasumum" rel="external">9. Fasilitas umum</a></li>
+                <li><a href="#arah" rel="external">10. Arah</a></li>
+                <li><a href="#namahewan" rel="external">11. Nama Hewan</a></li>
+                <li><a href="#rumahsakit" rel="external">12. Rumah sakit</a></li>
+                <li><a href="#buah" rel="external">13. Buah-Buahan</a></li>
+                <li><a href="#petunjukjalan" rel="external">14. Petunjuk jalan</a></li>
+                <li><a href="#kelas" rel="external">15. Di kelas</a></li>
+                <li><a href="#rempah" rel="external">16. Sayur dan Rempah-rempah</a></li>
+                <li><a href="#olahraga" rel="external">17. Tentang Olahraga</a></li>
+                <li><a href="#kendaraan" rel="external">18. Kendaraan</a></li>
+                <li><a href="#penyakit" rel="external">19. Tentang Penyakit</a></li>
+                <li><a href="#hari" rel="external">20. Nama Hari dan Bulan</a></li>
+            </ul>
+        </div><!--choice-list-->
+    </div><!--content-->
+
+
+</div>
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="sekrumah" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+
+                <h3> Di Sekitar Rumah
+                </h3></strong>
+                <!--** isi content ** -->
+            <div align="center">
+                
+                <table border="1" cellpadding="0" cellspacing="0" style="width: 100%px;">
+                    <tbody>
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">rumah</td>
+                        <td align="center">baytun</td>
+                        <td align="center">بيت</td>
+                    </tr>
+                    <tr>
+                        <td align="center">rumah</td>
+                        <td align="center">manzilun</td>
+                        <td align="center">منزل</td>
+                    </tr>
+                    <tr>
+                        <td align="center">atap</td>
+                        <td align="center">saqfun</td>
+                        <td align="center">سقف</td>
+                    </tr>
+                    <tr>
+                        <td align="center">lantai</td>
+                        <td align="center">ardliyyatun</td>
+                        <td align="center">أرضية</td>
+                    </tr>
+                    <tr>
+                        <td align="center">listrik</td>
+                        <td align="center">kahrubaa'</td>
+                        <td align="center">كهرباء</td>
+                    </tr>
+                    <tr>
+                        <td align="center">wayar</td>
+                        <td align="center">silkun</td>
+                        <td align="center">سلك</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kunci</td>
+                        <td align="center">miftahun</td>
+                        <td align="center">مفتاح</td>
+                    </tr>
+                    <tr>
+                        <td align="center">pintu</td>
+                        <td align="center">baabun</td>
+                        <td align="center">باب</td>
+                    </tr>
+                    <tr>
+                        <td align="center">gerbang</td>
+                        <td align="center">bawwaabatun</td>
+                        <td align="center">بوّابة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">gedung</td>
+                        <td align="center">mbaniyyun</td>
+                        <td align="center">مبنى</td>
+                    </tr>
+                    <tr>
+                        <td align="center">elevator</td>
+                        <td align="center">mish'adun</td>
+                        <td align="center">مصعد</td>
+                    </tr>
+                    <tr>
+                        <td align="center">tangga</td>
+                        <td align="center">sullaalamun</td>
+                        <td align="center">سلالم</td>
+                    </tr>
+                    <tr>
+                        <td align="center">sisir</td>
+                        <td align="center">musthun</td>
+                        <td align="center">مشط</td>
+                    </tr>
+                    <tr>
+                        <td align="center">handphone</td>
+                        <td align="center">haatifun</td>
+                        <td align="center">هاتف</td>
+                    </tr>
+                    <tr>
+                        <td align="center">jendela</td>
+                        <td align="center">naafidzatun</td>
+                        <td align="center">نافذة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kamar</td>
+                        <td align="center">hujrotun</td>
+                        <td align="center">حجرة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kamar</td>
+                        <td align="center">ghurfatun</td>
+                        <td align="center">غرفة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">lampu</td>
+                        <td align="center">mishbaahun</td>
+                        <td align="center">مصباح</td>
+                    </tr>
+                    <tr>
+                        <td align="center">sapu</td>
+                        <td align="center">miknasatun</td>
+                        <td align="center">مكنسة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">jam</td>
+                        <td align="center">saa'atun</td>
+                        <td align="center">ساعة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">gunting</td>
+                        <td align="center">miqoshshun</td>
+                        <td align="center">مقصّ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">sabun</td>
+                        <td align="center">shoobuunun</td>
+                        <td align="center">صابون</td>
+                    </tr>
+                    <tr>
+                        <td align="center">handuk</td>
+                        <td align="center">minsyarfatun</td>
+                        <td align="center">منشفة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">karpet</td>
+                        <td align="center">sajjaadatun</td>
+                        <td align="center">سجّادة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">cermin</td>
+                        <td align="center">mir atun</td>
+                        <td align="center">مرآة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">setrika</td>
+                        <td align="center">mikwaatun</td>
+                        <td align="center">مكواة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kamar mandi</td>
+                        <td align="center">hammamun</td>
+                        <td align="center">حمّام</td>
+                    </tr>
+                    <tr>
+                        <td align="center">apartemen</td>
+                        <td align="center">syiqqotun</td>
+                        <td align="center">شقة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kipas angin</td>
+                        <td align="center">mirwahatun</td>
+                        <td align="center">مروحة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kamar tidur</td>
+                        <td align="center">ghurfatun naum</td>
+                        <td align="center">نوم غرفة </td>
+                    </tr>
+                    <tr>
+                        <td align="center">tempat tidur</td>
+                        <td align="center">sariirun</td>
+                        <td align="center">سرير</td>
+                    </tr>
+                    <tr>
+                        <td align="center">gantungan baju</td>
+                        <td align="center">'alaaqotun</td>
+                        <td align="center">ثياب علاقة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">pasta gigi</td>
+                        <td align="center">ma'juuni isnaan</td>
+                        <td align="center">معجون اسنان</td>
+                    </tr>
+                    <tr>
+                        <td align="center">ruang makan</td>
+                        <td align="center">ghurfatun tho'aam</td>
+                        <td align="center">غرفة طعام</td>
+                    </tr>
+                    <tr>
+                        <td align="center">ruang tamu</td>
+                        <td align="center">ghurfatun juluus</td>
+                        <td align="center">غرفة جلوس</td>
+                    </tr>
+                    <tr>
+                        <td align="center">tetangga</td>
+                        <td align="center">jaarun</td>
+                        <td align="center">جار</td>
+                    </tr>
+                    </tbody></table>
+            </div>
+        </fieldset>
+    </div>
+                <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#ukuran" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#fasilitasumum" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="kelas" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center> <h3>Di Kelas</h3>
+            </strong>
+            <!--** isi content ** -->
+            <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                <tr>
+                    <td align="center"><strong>Arti (Indonesia)</strong></td>
+                    <td align="center"><strong>Ejaan</strong></td>
+                    <td align="center"><strong>Kosa Kata Arab</strong></td>
+                </tr>
+                <tr>
+                    <td align="center">papan tulis</td>
+                    <td align="center">sabburatun</td>
+                    <td align="center">سَبُّوْرَةٌ</td>
+                </tr>
+                <tr>
+                    <td align="center">kapur</td>
+                    <td align="center">thobsyuuratun</td>
+                    <td align="center">طَبْشُوْرَةٌ</td>
+                </tr>
+                <tr>
+                    <td align="center">penghapus papan tulis</td>
+                    <td align="center">thollaasatun</td>
+                    <td align="center"><span dir="RTL">طَلاَّسَةٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">meja</td>
+                    <td align="center">maktabun</td>
+                    <td align="center"><span dir="RTL">مَكْتَبٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">kursi</td>
+                    <td align="center">kursiyyun</td>
+                    <td align="center"><span dir="RTL">كُرْسِيٌّ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">pintu</td>
+                    <td align="center">baabun</td>
+                    <td align="center"><span dir="RTL">بَابٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">jendela</td>
+                    <td align="center">naafidhatun</td>
+                    <td align="center"><span dir="RTL">نَافِذَةٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">pena</td>
+                    <td align="center">qolamun</td>
+                    <td align="center"><span dir="RTL">قَلَمٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">pensil</td>
+                    <td align="center">qolamu roshooshin</td>
+                    <td align="center"><span dir="RTL"><span dir="RTL">قَلَمٌ الرَّصَاصِ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">penghapus pensil</td>
+                    <td align="center">mimhatun</td>
+                    <td align="center"><span dir="RTL">مِمْحَةٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">guru</td>
+                    <td align="center">mudarrisun</td>
+                    <td align="center"><span dir="RTL">مُدَرِّسٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">siswa</td>
+                    <td align="center">thoolibun</td>
+                    <td align="center"><span dir="RTL">طَالِبٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">sekolah</td>
+                    <td align="center">madrosatun</td>
+                    <td align="center"><span dir="RTL">مَدْرَسَةٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">bel</td>
+                    <td align="center">jarosun</td>
+                    <td align="center"><span dir="RTL">جَرَسٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">buku cetak</td>
+                    <td align="center">kitaabun</td>
+                    <td align="center"><span dir="RTL">كِتَابٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">buku tulis</td>
+                    <td align="center">kurrosatun</td>
+                    <td align="center"><span dir="RTL">كرَّسَةٌ</span></td>
+                </tr>
+                <tr>
+                    <td align="center">buku absen</td>
+                    <td align="center">kasyful hudluur</td>
+                    <td align="center">كشفُ الْحُضُوْرِ</td>
+                </tr>
+            </div></table> </center>
+
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#petunjukjalan" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#rempah" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="rumahsakit" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Di Rumah Sakit
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">rumah sakit</td>
+                        <td align="center">mustasyfa</td>
+                        <td align="center"><span dir="RTL">مُسْتَشْفَى</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">dokter</td>
+                        <td align="center">thobiibun</td>
+                        <td align="center"><span dir="RTL">طَبِيْب</span><span dir="LTR"> </span><span dir="LTR"> </span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">suster</td>
+                        <td align="center">mumaridlotun</td>
+                        <td align="center"><span dir="RTL"><span dir="RTL">مُمَرِضَةٌ</span></span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">sakit</td>
+                        <td align="center">mariydlun</td>
+                        <td align="center"><span dir="RTL">مَرِيْضٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">terluka</td>
+                        <td align="center">majruuhun</td>
+                        <td align="center"><span dir="RTL">مَجْرُوْحٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">klinik</td>
+                        <td align="center">'iyaadatun</td>
+                        <td align="center"><span dir="RTL">عِيَادَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">baju</td>
+                        <td align="center">libaasun</td>
+                        <td align="center"><span dir="RTL">لِبَاسٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kemeja</td>
+                        <td align="center">qomiishun</td>
+                        <td align="center"><span dir="RTL">قَمِيْصٌ</span></td>
+                    </tr>
+
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#namahewan" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#buah" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="petunjukjalan" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Petunjuk Jalan
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">arah</td>
+                        <td align="center">ittijaahun</td>
+                        <td align="center"><span dir="RTL">اِتِّجَاهٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">di depan</td>
+                        <td align="center">qodaamun</td>
+                        <td align="center"><span dir="RTL">قَدَامٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">terus, lurus</td>
+                        <td align="center">'ala thuuli</td>
+                        <td align="center">على طول</td>
+                    </tr>
+                    <tr>
+                        <td align="center">ke kanan</td>
+                        <td align="center">'alal yamiini</td>
+                        <td align="center">على اليمين</td>
+                    </tr>
+                    <tr>
+                        <td align="center">ke kiri</td>
+                        <td align="center">'ala syimaali</td>
+                        <td align="center">على الشمال</td>
+                    </tr>
+                    <tr>
+                        <td align="center">di belakang</td>
+                        <td align="center">fil farooi</td>
+                        <td align="center">في الوراء</td>
+                    </tr>
+                    <tr>
+                        <td align="center">di bawah</td>
+                        <td align="center">tahta</td>
+                        <td align="center"><span dir="RTL">تَحْتَ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">di atas</td>
+                        <td align="center">fauqo</td>
+                        <td align="center"><span dir="RTL">فَوْقَ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">di sana</td>
+                        <td align="center">hunaaka</td>
+                        <td align="center"><span dir="RTL">هُنَاكَ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">di sini</td>
+                        <td align="center">huna</td>
+                        <td align="center"><span dir="RTL">هُنَا</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">jarak</td>
+                        <td align="center">masaafatun</td>
+                        <td align="center"><span dir="RTL">مَسَافَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">dekat</td>
+                        <td align="center">qoriibun</td>
+                        <td align="center"><span dir="RTL">قَرِيْبٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">jauh</td>
+                        <td align="center">ba'iidun</td>
+                        <td align="center"><span dir="RTL">بَعِيْدٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">di</td>
+                        <td align="center">fi</td>
+                        <td align="center">فِيْ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">bersama</td>
+                        <td align="center">ma'a</td>
+                        <td align="center">مَعَ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">dengan</td>
+                        <td align="center">bi</td>
+                        <td align="center">بِ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">di atas</td>
+                        <td align="center">'ala</td>
+                        <td align="center">عَلَى</td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#buah" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#kelas" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="arah" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Arah
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">arah</td>
+                        <td align="center">jahatun</td>
+                        <td align="center"><span dir="RTL">جَهَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">barat</td>
+                        <td align="center">ghorbun</td>
+                        <td align="center"><span dir="RTL">غَرْبِيٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">barat daya</td>
+                        <td align="center">januubun ghorbiyyun</td>
+                        <td align="center">جنوب غربىّ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">barat laut</td>
+                        <td align="center">syimaalun ghorbiyyun</td>
+                        <td align="center">شمال غربىّ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kanan</td>
+                        <td align="center">yamiinun</td>
+                        <td align="center"><span dir="RTL">يَمِيْن</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kiri</td>
+                        <td align="center">yusro</td>
+                        <td align="center"><span dir="RTL">يُسْرَى</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">selatan</td>
+                        <td align="center">januubun</td>
+                        <td align="center"><span dir="RTL">جَنُوْبٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">tenggara</td>
+                        <td align="center">januubun syarqiyyun</td>
+                        <td align="center">جنوب شرقىّ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">timur</td>
+                        <td align="center">syarqun</td>
+                        <td align="center"><span dir="RTL">شَرْقٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">timur laut</td>
+                        <td align="center">syimaalun syarqiyyun</td>
+                        <td align="center">شمال شرقىّ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">utara</td>
+                        <td align="center">syimaalun</td>
+                        <td align="center"><span dir="RTL">شِمَالٌ</span></td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#fasilitasumum" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#namahewan" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="minuman" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Makanan dan Minuman
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">makanan pokok</td>
+                        <td align="center">baqoolatun</td>
+                        <td align="center"><span dir="RTL">بَقَالَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">sayur-sayuran</td>
+                        <td align="center">al khudlrowaat</td>
+                        <td align="center"><span dir="RTL">الخُضْرَوَات</span><span dir="LTR"> </span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">nasi</td>
+                        <td align="center">ruzzun</td>
+                        <td align="center"><span dir="RTL">رُزٌّ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">telur</td>
+                        <td align="center">baydlun</td>
+                        <td align="center"><span dir="RTL">بَيْضٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">ikan</td>
+                        <td align="center">samakun</td>
+                        <td align="center"><span dir="RTL">سَمَكٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">ayam</td>
+                        <td align="center">dujaajun</td>
+                        <td align="center"><span dir="RTL">دُجَاجٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">daging</td>
+                        <td align="center">lahmun</td>
+                        <td align="center"><span dir="RTL">لَحْمٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">teh</td>
+                        <td align="center">syay</td>
+                        <td align="center"><span dir="RTL">شَايْ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">susu</td>
+                        <td align="center">labanun</td>
+                        <td align="center"><span dir="RTL">لَبَنٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kopi</td>
+                        <td align="center">qohwah</td>
+                        <td align="center"><span dir="RTL">قَهْوَة</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">buah-buahan</td>
+                        <td align="center">fawaakihun</td>
+                        <td align="center"><span dir="RTL">فَوَاكِهٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">apel</td>
+                        <td align="center">tuffaahun</td>
+                        <td align="center"><span dir="RTL">تُفَّاحٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">pisang</td>
+                        <td align="center">mauzun</td>
+                        <td align="center"><span dir="RTL">مَوْزٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">jeruk</td>
+                        <td align="center">burtuqool</td>
+                        <td align="center"><span dir="RTL">بُرْتُقَال</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">tomat</td>
+                        <td align="center">thomaathim</td>
+                        <td align="center"><span dir="RTL">طَمَاطِم</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">cabe</td>
+                        <td align="center">filfil</td>
+                        <td align="center"><span dir="RTL">فِلْفِلْ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">bawang</td>
+                        <td align="center">basholun</td>
+                        <td align="center"><span dir="RTL">بَصَلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">gula</td>
+                        <td align="center">sukkarun</td>
+                        <td align="center"><span dir="RTL">سُكَّرٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">garam</td>
+                        <td align="center">milhun</td>
+                        <td align="center"><span dir="RTL">مِلْحٌ</span></td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#katakerja" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#ukuran" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="ukuran" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Ukuran</h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">banyak</td>
+                        <td align="center">katsiirun</td>
+                        <td align="center"><span dir="RTL">كَثِيْرٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">berat</td>
+                        <td align="center">tsaqiilun</td>
+                        <td align="center"><span dir="RTL">ثَقِيْلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">besar</td>
+                        <td align="center">kabiirun</td>
+                        <td align="center"><span dir="RTL">كَبِيْرٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">dalam</td>
+                        <td align="center">'amiiqun</td>
+                        <td align="center"><span dir="RTL">عَمِيْقٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">dangkal</td>
+                        <td align="center">dlohlun</td>
+                        <td align="center"><span dir="RTL">ضَحْلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">dekat</td>
+                        <td align="center">qariibun</td>
+                        <td align="center"><span dir="RTL">قَرِيْبٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">gemuk</td>
+                        <td align="center">samiinun</td>
+                        <td align="center"><span dir="RTL">سَمِيْنٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">jauh</td>
+                        <td align="center">ba'iidun</td>
+                        <td align="center"><span dir="RTL">بَعِيْدٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kecil</td>
+                        <td align="center">shoghiirun</td>
+                        <td align="center"><span dir="RTL">صَغِيْرٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kosong</td>
+                        <td align="center">faarighun</td>
+                        <td align="center"><span dir="RTL">فَارِغٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kurus</td>
+                        <td align="center">haaziilun</td>
+                        <td align="center"><span dir="RTL">هَزِيْلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">lebar</td>
+                        <td align="center">'ariidlun</td>
+                        <td align="center"><span dir="RTL">عَرِيْضٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">luas</td>
+                        <td align="center">waasi'un</td>
+                        <td align="center"><span dir="RTL">وَاسِعٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">panjang</td>
+                        <td align="center">thowiilun</td>
+                        <td align="center"><span dir="RTL">طَوِيْلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">pendek</td>
+                        <td align="center">qoshiirun</td>
+                        <td align="center"><span dir="RTL">قَصِيْرٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">penuh</td>
+                        <td align="center">mumtaliun</td>
+                        <td align="center"><span dir="RTL">مُمْتَلِئٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">ringan</td>
+                        <td align="center">khofiifun</td>
+                        <td align="center"><span dir="RTL">خَفِيْفٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">sedikit</td>
+                        <td align="center">qoliilun</td>
+                        <td align="center"><span dir="RTL">قَلِيْلٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">sempit</td>
+                        <td align="center">dloyyiqun</td>
+                        <td align="center"><span dir="RTL">ضَيِّقٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">tebal</td>
+                        <td align="center">gholiidhun</td>
+                        <td align="center"><span dir="RTL">غَلِيْظٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">tinggi</td>
+                        <td align="center">murtafa'un</td>
+                        <td align="center"><span dir="RTL">مُرْتَفَعٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">tipis</td>
+                        <td align="center">roqiiqun</td>
+                        <td align="center"><span dir="RTL">رَقِيْقٌ</span></td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#minuman" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#sekrumah" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="hitungan" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Hitungan
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td align="center">wahidun</td>
+                        <td align="center"><span dir="RTL">وَاحِدٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td align="center">tsaniyatun</td>
+                        <td align="center"><span dir="RTL">ثَانِيَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td align="center">tsalatsatun</td>
+                        <td align="center"><span dir="RTL">ثَلَاثَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td align="center">arba'atun</td>
+                        <td align="center"><span dir="RTL">أَرْبَعَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">5</td>
+                        <td align="center">khomsatun</td>
+                        <td align="center"><span dir="RTL">خَمْسَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">6</td>
+                        <td align="center">sittatun</td>
+                        <td align="center"><span dir="RTL">سِتَّةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">7</td>
+                        <td align="center">sab'atun</td>
+                        <td align="center"><span dir="RTL">سَبْعَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">8</td>
+                        <td align="center">tsamaniyatun</td>
+                        <td align="center"><span dir="RTL">ثَمَانِيَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">9</td>
+                        <td align="center">tis'atun</td>
+                        <td align="center"><span dir="RTL">تِسْعَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">10</td>
+                        <td align="center">'asyrotun</td>
+                        <td align="center"><span dir="RTL">عَشْرَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">11</td>
+                        <td align="center">ihda 'asyaro</td>
+                        <td align="center">إِحْدَى عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">12</td>
+                        <td align="center">itsna 'asyaro</td>
+                        <td align="center">اِثْنَا عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">13</td>
+                        <td align="center">tsalaatsata 'asyaro</td>
+                        <td align="center">ثَلَاثَةَ عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">14</td>
+                        <td align="center">arba'ata 'asyaro</td>
+                        <td align="center">اَرْبَعَةَ عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">15</td>
+                        <td align="center">khomsata 'asyaro</td>
+                        <td align="center">خَمْسَةَ عَشَرَ</td>
+                    </tr>
+                    <tr>
+                        <td align="center">16</td>
+                        <td align="center">sittata 'asyaro</td>
+                        <td align="center">سِتَّةَ عَشَرَ &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">17</td>
+                        <td align="center">sab'ata 'asyaro</td>
+                        <td align="center">سَبْعَةَ عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">18</td>
+                        <td align="center">tsamaaniyata 'asyaro</td>
+                        <td align="center">ثَمَانِيَةَ عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">19</td>
+                        <td align="center">tis'ata 'asyaro</td>
+                        <td align="center">تِسْعَةَ عَشَرَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">20</td>
+                        <td align="center">'isyriina</td>
+                        <td align="center">عِشْرِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">30</td>
+                        <td align="center">tsalaatsiina</td>
+                        <td align="center">ثَلَاثِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">40</td>
+                        <td align="center">arba'iina</td>
+                        <td align="center">اَرْبَعِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">50</td>
+                        <td align="center">khomsiina</td>
+                        <td align="center">خَمْسِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">60</td>
+                        <td align="center">sittiina</td>
+                        <td align="center">سِتِّيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">70</td>
+                        <td align="center">sab'iina</td>
+                        <td align="center">سَبْعِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">80</td>
+                        <td align="center">tsamaaniina</td>
+                        <td align="center">ثَمَانِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">90</td>
+                        <td align="center">tis'iina</td>
+                        <td align="center">تِسْعِيْنَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">100</td>
+                        <td align="center">miatun</td>
+                        <td align="center">مِائَةٌ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">500</td>
+                        <td align="center">khomsu miatin</td>
+                        <td align="center">خَمْسُ مِائَة&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1000</td>
+                        <td align="center">alfun</td>
+                        <td align="center">أَلْفٌ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2000</td>
+                        <td align="center">alfaini</td>
+                        <td align="center">أَلْفَيْن&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">3000</td>
+                        <td align="center">tsalaatsata alfin</td>
+                        <td align="center">ثَلَاثَةَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">4000</td>
+                        <td align="center">arba'ata alfin</td>
+                        <td align="center">أَرْبَعَةَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">5000</td>
+                        <td align="center">khomsata alfin</td>
+                        <td align="center">خَمْسَةَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">10000</td>
+                        <td align="center">'isyriina alfin</td>
+                        <td align="center">عِشْرِيْنَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">50000</td>
+                        <td align="center">khomsiina alfin</td>
+                        <td align="center">خَمْسِيْنَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="19" align="center">100000</td>
+                        <td align="center">miata alfin</td>
+                        <td align="center">مِائَةَ أَلْفٍ&nbsp;</td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#keluarga" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="fasilitasumum" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3>Fasilitas Umum
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Ejaan</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">alamat</td>
+                        <td align="center">'unwaanun</td>
+                        <td align="center"><span dir="RTL">عُنْوَانٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">ambulan</td>
+                        <td align="center">sayyaarotul as'aaf</td>
+                        <td align="center">سيّارة الإسعاف</td>
+                    </tr>
+                    <tr>
+                        <td align="center">amplop</td>
+                        <td align="center">dhorfun</td>
+                        <td align="center"><span dir="RTL">ظَرْفٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">formulir</td>
+                        <td align="center">istimaarotun</td>
+                        <td align="center"><span dir="RTL">إِسْتِمَارَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">halte</td>
+                        <td align="center">mahathotun</td>
+                        <td align="center"><span dir="RTL">مَحَطَّة</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kapal laut</td>
+                        <td align="center">safiinatun</td>
+                        <td align="center"><span dir="RTL">سَفِيْنَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">pesawat</td>
+                        <td align="center">thooirotun</td>
+                        <td align="center"><span dir="RTL">طَائِرَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kereta api</td>
+                        <td align="center">qithoorun</td>
+                        <td align="center"><span dir="RTL">قِطَارٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">kotak pos</td>
+                        <td align="center">shunduuqul bariid</td>
+                        <td align="center">صندوق البريد</td>
+                    </tr>
+                    <tr>
+                        <td align="center">lapangan terbang</td>
+                        <td align="center">mathoorun</td>
+                        <td align="center"><span dir="RTL">مَطَارٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">mobil</td>
+                        <td align="center">sayyaarotun</td>
+                        <td align="center"><span dir="RTL">سَيَّارَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">mobil truk</td>
+                        <td align="center">sayyarotul naql</td>
+                        <td align="center">سيّارة النقل</td>
+                    </tr>
+                    <tr>
+                        <td align="center">motor</td>
+                        <td align="center">jawwaalatun</td>
+                        <td align="center"><span dir="RTL">جَوَّالَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">pelabuhan</td>
+                        <td align="center">miinaaun</td>
+                        <td align="center"><span dir="RTL">مِيْنَاءٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">pom bensin</td>
+                        <td align="center">mahathotul binziin</td>
+                        <td align="center">محطّة البنزين</td>
+                    </tr>
+                    <tr>
+                        <td align="center">kantor pos</td>
+                        <td align="center">maktabu bariid</td>
+                        <td align="center">مكتب البريد</td>
+                    </tr>
+                    <tr>
+                        <td align="center">perangko</td>
+                        <td align="center">thoobi'ul bariid</td>
+                        <td align="center">طابع البريد</td>
+                    </tr>
+                    <tr>
+                        <td align="center">sepeda</td>
+                        <td align="center">darroojatun</td>
+                        <td align="center"><span dir="RTL">دَرَّاجَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">stasiun</td>
+                        <td align="center">mahathotun</td>
+                        <td align="center"><span dir="RTL">مَحَطَّةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">surat</td>
+                        <td align="center">risaalatun</td>
+                        <td align="center"><span dir="RTL">رِسَالَةٌ</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">taksi</td>
+                        <td align="center">taksi</td>
+                        <td align="center"><span dir="RTL">تَكْسِي</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">terminal</td>
+                        <td align="center">mauqifu sayyaaroh</td>
+                        <td align="center">موقف السّيّارة</td>
+                    </tr>
+                    <tr>
+                        <td align="center">wesel</td>
+                        <td align="center">alhawaalatu</td>
+                        <td align="center">الحوالة</td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#sekrumah" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#arah" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="katakerja" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <fieldset>
+            <center>
+
+                <h3> Fi'il (Kata Kerja)
+                </h3></strong>
+                <!--** isi content ** -->
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tbody>
+                    <tr><td><b>Arti</b></td><td><b>Arab</b></td><td><b>Bacaan</b></td></tr>
+                    <tr><td>menjadi</td><td><b>كان - يكون &nbsp;- كون&nbsp;</b></td><td>kaana - yakuunu (kaun) </td></tr>
+                    <tr><td>melakukan</td><td><b>فعل - يفعل &nbsp;- فعل&nbsp;</b></td><td>fa'ala - yaf'alu (fa'l)</td></tr>
+                    <tr><td>melakukan</td><td><b>عمل - يعمل - عمل&nbsp;</b></td><td>'amala - ya'milu ('amal)
+                    </td></tr>
+                    <tr><td>menghadirkan</td><td><b>أحضر &#8211; يحضر - احضار&nbsp;</b></td><td>ahdara - yuhdiru (ihdaar)
+                    </td></tr>
+                    <tr><td>mengambil</td><td><b>أخذ &#8211; يأخذ - أخذ&nbsp;</b></td><td>akhada - ya'khudu (akhzun)
+                    </td></tr>
+                    <tr><td>meletakkan</td><td><b>وضع - يضع - وضع&nbsp;</b></td><td>wada'a - yada'u (wad'un)
+                    </td></tr>
+                    <tr><td>menjadi</td><td><b>أصبح - يصبح - اصباح&nbsp;</b></td><td>ashbaha - yushbihu (ishbaah)
+                    </td></tr>
+                    <tr><td>mengganti</td><td><b>غي&#1617;ر - يغي&#1617;ر - - تغيير&nbsp;</b></td><td>ġayyara - yuġayyiru (taġyiir)
+                    </td></tr>
+                    <tr><td>menghitung</td><td><b>عد&#1617; - يعد&#1617; - عد&#1617;&nbsp;</b></td><td>'adda - ya'uddu ('add)
+                    </td></tr>
+                    <tr><td>pergi</td><td><b>ذهب - يذهب &nbsp;-ذهاب&nbsp;</b></td><td>dzahaba - yadzhabu (dzahaab)
+                    </td></tr>
+                    <tr><td>berjalan</td><td><b>مشى - يمشي - مشي&nbsp;</b></td><td>mašya - yamšyi (mašy)
+                    </td></tr>
+                    <tr><td>berlari</td><td><b>جرى - يجري - جري&nbsp;</b></td><td>jaraa - yajrii (jaryun)
+                    </td></tr>
+                    <tr><td>datang</td><td><b>جاء &#8211; يجئ - جيئة&nbsp;</b></td><td>jaa'a - yajii'u (jii'a)
+                    </td></tr>
+                    <tr><td>datang</td><td><b>أتى - يأتي - اتي&nbsp;</b></td><td>ata - yaa'ti (aty)
+                    </td></tr>
+                    <tr><td>pulang</td><td><b>رجع &#8211; يرجع - رجوع &nbsp;</b></td><td>raja'a - yarja'u (rujuu')
+                    </td></tr>
+                    <tr><td>kembali</td><td><b>عاد - يعود - عودة&nbsp;</b></td><td>'aada - ya'uudu ('awda)
+                    </td></tr>
+                    <tr><td>sampai</td><td><b>وصل - يصل &nbsp;- وصول &nbsp;</b></td><td>washala - yashilu (wushuul)
+                    </td></tr>
+                    <tr><td>duduk</td><td><b>جلس &#8211; يجلس - جلوس&nbsp;</b></td><td>jalasa - yajlisu (juluus)
+                    </td></tr>
+                    <tr><td>berdiri</td><td><b>قام - يقوم - قيام&nbsp;</b></td><td>qaama - yaquumu (qiyaam)
+                    </td></tr>
+                    <tr><td>jatuh</td><td><b>سقط - يسقط - سقوط&nbsp;</b></td><td>saqatha - yasquthu (suquuTh)
+                    </td></tr>
+                    <tr><td>terbit</td><td><b>طلع - يطلع - طلوع&nbsp;</b></td><td>thala'a - yathla'u (thuluu')
+                    </td></tr>
+                    <tr><td>turun</td><td><b>نزل - ينزل - نزول&nbsp;</b></td><td>nazila - yanzilu (nuzuul)
+                    </td></tr>
+                    <tr><td>memasak</td><td><b>طبخ - يطبخ - طبخ&nbsp;</b></td><td>tabakha - yatbukhu (tabkhun)
+                    </td></tr>
+                    <tr><td>makan</td><td><b>أكل - يأكل - أكل&nbsp;</b></td><td>akala - yaa'kulu ('akl)
+                    </td></tr>
+                    <tr><td>minum</td><td><b>شرب &#8211; يشرب - شرب&nbsp;</b></td><td>šariba - yašrabu (šurb)
+                    </td></tr>
+                    <tr><td>bangun tidur</td><td><b>استيقظ - يستيقظ - استيقاظ&nbsp;</b></td><td>istayqaza - yastayqizu (istiiqaaz)
+                    </td></tr>
+                    <tr><td>tidur</td><td><b>نام - ينام - نوم&nbsp;</b></td><td>naama - yanaamu (nawm)
+                    </td></tr>
+                    <tr><td>mencuci</td><td><b>غسل - يغسل - غسل&nbsp;</b></td><td>ġasala - yaġsilu (ġasl)
+                    </td></tr>
+                    <tr><td>membersihkan</td><td><b>نظ&#1617;ف - ينظ&#1617;ف - تنظيف&nbsp;</b></td><td>nazzafa - yunazzifu (tanziif)
+                    </td></tr>
+                    <tr><td>belajar</td><td><b>درس - يدرس - دراسة&nbsp;</b></td><td>darasa - yadrusu (diraasa)
+                    </td></tr>
+                    <tr><td>belajar</td><td><b>تعل&#1617;م &#8211; يتعل&#1617;م - تعل&#1617;م&nbsp;</b></td><td>ta'allama - yata'allamu (ta'allum)
+                    </td></tr>
+                    <tr><td>memahami</td><td><b>فهم - يفهم - فهم&nbsp;</b></td><td>fahima - yafhamu (fahm)
+                    </td></tr>
+                    <tr><td>tmengetahui</td><td><b>عرف - يعرف - معرفة&nbsp;</b></td><td>'arafa - ya'rifu (ma'rifa)
+                    </td></tr>
+                    <tr><td>mengingat</td><td><b>تذكر - يتذكر - تذكر&nbsp;</b></td><td>tadzakkara - yatadzakkaru (tadzakkur)
+                    </td></tr>
+                    <tr><td>berfikir</td><td><b>افتكر - يفتكر - افتكار&nbsp;</b></td><td>iftakar - yiftikir (iftikaar)
+                    </td></tr>
+                    <tr><td>lupa</td><td><b>نسي - ينسى - نسي&nbsp;</b></td><td>nasiya - yansaa (nasyun)
+                    </td></tr>
+                    </tbody></table>
+                </br>
+                <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                    <tr>
+                        <td align="center"><strong>Arti (Indonesia)</strong></td>
+                        <td align="center"><strong>Kosa Kata Arab</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">Kelihatan/nampak</td>
+                        <td align="center">ظهر - يظهر&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">berbunyi</td>
+                        <td align="center">تصوّت - يتصوّت&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menambah</td>
+                        <td align="center">ازاد - يزيد&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menaikkan</td>
+                        <td align="center">رفع - يرفع&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengurangi</td>
+                        <td align="center">نقص - ينقص&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menjumlahkan</td>
+                        <td align="center">جمل - يجمل&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengurangi</td>
+                        <td align="center">نقص - ينقص&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">membagi</td>
+                        <td align="center">قسم - يقسم&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">membelah</td>
+                        <td align="center">شقّ - يشقّ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">memisahkan</td>
+                        <td align="center">فرّق - يفرّق&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menggabungkan</td>
+                        <td align="center">ضمّ - يضمّ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">bekerjasama</td>
+                        <td align="center">إشترك - يشترك&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengumpulkan</td>
+                        <td align="center">جمع - يجمع&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">membenci</td>
+                        <td align="center">بغض - يبغض&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menyakiti hati</td>
+                        <td align="center">يؤلم قلباً&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengganggu</td>
+                        <td align="center">أزعج - يزعج&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengancam</td>
+                        <td align="center">توعّد - يتوعّد&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mengecewakan</td>
+                        <td align="center">خيّب العملَ&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menghina</td>
+                        <td align="center">أهان - يهين&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">memalukan</td>
+                        <td align="center">موجبٌ للحياء&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">membingungkan</td>
+                        <td align="center">تردّد - يتردّد&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menyenangkan</td>
+                        <td align="center">أفرح - يفرح&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">memuaskan</td>
+                        <td align="center">إقتنع - يقتنع&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">menghibur</td>
+                        <td align="center">سلّى - يسلّى&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">mempersilahkan</td>
+                        <td align="center">رحّب - يرحّب&nbsp;</td>
+                    </tr>
+                </div></table>
+            </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#tubuh " data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#minuman" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="namahewan" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3> Nama Hewan
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+                <tbody style="margin: 0px; padding: 0px;">
+                <tr style="margin: 0px; padding: 0px;">
+                    <td style="margin: 0px; padding: 5px 5px;"><div style="text-align: center;">
+                        <span class="bold" style="font-weight: bold; margin: 0px; padding: 0px;">B. Indonesia</span></div>
+                    </td>
+                    <td style="margin: 0px; padding: 5px 5px;"><div style="text-align: center;">
+                        <span class="bold" style="font-weight: bold; margin: 0px; padding: 0px;">Bahasa Arab</span></div>
+                    </td>
+                    <td style="margin: 0px; padding: 5px 5px;"><div style="text-align: center;">
+                        <span class="bold" style="font-weight: bold; margin: 0px; padding: 0px;">Bacaan</span></div>
+                    </td></tr>
+                <tr style="margin: 0px; padding: 0px;">
+                    <td style="margin: 0px; padding: 5px 5px;">Hewan</td>
+                    <td dir="rtl" style="margin: 0px; padding: 5px 10px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حيوان (ج) حيوانات</span></td>
+                    <td style="margin: 0px; padding: 5px 5px;">hayawaanun (j.) hayawaanaat</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kucing</td><td dir="rtl" style="margin: 0px; padding: 5px 10px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قط&#1617;ة (ج) قطط</span></td><td style="margin: 0px; padding: 5px 5px;">qiththatun (j.) qithaathun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Anjing</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">كلب (ج) كلاب</span></td><td style="margin: 0px; padding: 5px 5px;">kalbun (j.) kilaabun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Sapi / Lembu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بقرة (ج) بقرات</span></td><td style="margin: 0px; padding: 5px 5px;">baqaratun (j.) baqaraatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Banteng</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ثور (ج) ثيران</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">t</u>surun (j.)&nbsp;<u style="margin: 0px; padding: 0px;">t</u>iiraanun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Anak sapi</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عجل (ج) عجول</span></td><td style="margin: 0px; padding: 5px 5px;">'ajlun (j.) 'ujuulun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kerbau</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">جاموس (ج) جواميس</span></td><td style="margin: 0px; padding: 5px 5px;">jaamuusun (j.) jawaamiisun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Bangkai</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بهيمة (ج) بهائم</span></td><td style="margin: 0px; padding: 5px 5px;">bahiimatun (j.) bahaa&#8217;imun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kambing/Biri2</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">غنم (ج) أغنام</span></td><td style="margin: 0px; padding: 5px 5px;">ġanamun (j.) aġnaamun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Anak biri-biri</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">خروف (ج) خراف</span></td><td style="margin: 0px; padding: 5px 5px;">kharuufun (j.) khiraafun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Keledai</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حمار (ج) حمير</span></td><td style="margin: 0px; padding: 5px 5px;">himaarun (j.) hamiirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kuda</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حصان (ج) حصن</span></td><td style="margin: 0px; padding: 5px 5px;">hishaanun (j.) hushunun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Unta</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">جمل (ج) جمال</span></td><td style="margin: 0px; padding: 5px 5px;">jamalun (j.) jimaalun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kambing</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ماعز (ج) مواعز</span></td><td style="margin: 0px; padding: 5px 5px;">maa'izun (j.) mawaa'izun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Babi</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">خنزير (ج) خنازير</span></td><td style="margin: 0px; padding: 5px 5px;">khinziirun (j.) khanaaziirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kelinci</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">أرنب (ج) ارانب</span></td><td style="margin: 0px; padding: 5px 5px;">arnabun (j.) araanibun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Tikus</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فأر (ج) فئران</span></td><td style="margin: 0px; padding: 5px 5px;">fa'run (j.) fi'raanun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">طائر (ج) طائرات</span></td><td style="margin: 0px; padding: 5px 5px;">thaa'irun (j.) thaa'iraatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung (kecil)/pipit</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عصفور (ج) عصافير</span></td><td style="margin: 0px; padding: 5px 5px;">'ushfuurun (j.) 'ashaafiirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung Beo</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ببغاء (ج) ببغاوات</span></td><td style="margin: 0px; padding: 5px 5px;">babġaa'un (j.) babġaawaat</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Bebek</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بطة (ج) بط</span></td><td style="margin: 0px; padding: 5px 5px;">baththun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung merpati</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حمامة (ج) حمام</span></td><td style="margin: 0px; padding: 5px 5px;">hamaamun (j.) himaamun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Angsa</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">اوزة (ج) اوز</span></td><td style="margin: 0px; padding: 5px 5px;">iwazzatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ayam</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">دجاجة (ج) دجاج</span></td><td style="margin: 0px; padding: 5px 5px;">dajaajjatun (j.) dajaajun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ayam jago</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ديك (ج) ديوك</span></td><td style="margin: 0px; padding: 5px 5px;">diikun (j.) duyuukun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ayam kalkun</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ديك رومي</span></td><td style="margin: 0px; padding: 5px 5px;">diik ruumi</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung hantu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بومة (ج) بوم</span></td><td style="margin: 0px; padding: 5px 5px;">b'uumun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung merak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">طاووس (ج) طواويس</span></td><td style="margin: 0px; padding: 5px 5px;">thaawuusun (j.) thawaawiisun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung bangau</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">لقلق (ج) لقالق</span></td><td style="margin: 0px; padding: 5px 5px;">laqlaqun (j.) laqaaliqun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung layang2</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عصفور الجنة</span></td><td style="margin: 0px; padding: 5px 5px;">'ushfuur al-janna</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung pipit</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عصفور دوري</span></td><td style="margin: 0px; padding: 5px 5px;">'ushfuur duury</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Unta</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نعامة (ج) نعام</span></td><td style="margin: 0px; padding: 5px 5px;">na'aamun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung gagak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">غراب (ج) غربان</span></td><td style="margin: 0px; padding: 5px 5px;">ġuraabun (j.) ġirbaanun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung bulbul</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بلبل (ج) بلابل</span></td><td style="margin: 0px; padding: 5px 5px;">bulbulun (j.) balaabilun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung elang</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">صقر (ج) صقور</span></td><td style="margin: 0px; padding: 5px 5px;">shaqrun (j.) shuquurun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Burung garuda</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نسر (ج) نسور</span></td><td style="margin: 0px; padding: 5px 5px;">nasrun (j.) nusuurun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Angsa</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بجعة (ج) بجع</span></td><td style="margin: 0px; padding: 5px 5px;">baj'atun(a)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Binatang melata</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زاحف (ج) زواحف</span></td><td style="margin: 0px; padding: 5px 5px;">zaaHifun (j.) zawaaHifun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ampibi</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">برمائية (ج) برمائيات</span></td><td style="margin: 0px; padding: 5px 5px;">barmaa'iyyaun (j.) barmaa'iyyaatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ular</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ثعبان (ج) ثعابين</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">tsu'</u>baanun (j.)&nbsp;<u style="margin: 0px; padding: 0px;">ts</u>a'aabiinun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ular</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">أفعى (ج) افاع</span></td><td style="margin: 0px; padding: 5px 5px;">af'a (j.) afaa'i</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kura-kura</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سلحفاة (ج) سلاحف</span></td><td style="margin: 0px; padding: 5px 5px;">sulHufaatun (j.) salaaHifun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Cicak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سحلية (ج) سحال</span></td><td style="margin: 0px; padding: 5px 5px;">siHliyyatun (j.) saHaalinun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kodok</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ضفدع (ج) ضفادع</span></td><td style="margin: 0px; padding: 5px 5px;">Difdi'un (j.) Dafaadi'un</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Buaya</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">تمساح (ج) تماسيح</span></td><td style="margin: 0px; padding: 5px 5px;">timsaahun (j.) tamaasiiHun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Keong</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حلزون (ج) حلزونات</span></td><td style="margin: 0px; padding: 5px 5px;">Halazuunun (j.) Halazuunaatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Singa</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">أسد (ج) اسود</span></td><td style="margin: 0px; padding: 5px 5px;">asadun (j.) usuudun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kuda nil</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فرس (ج) افراس النهر</span></td><td style="margin: 0px; padding: 5px 5px;">farasun (j.) afraas an-nahar</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Badak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">وحيد القرن</span></td><td style="margin: 0px; padding: 5px 5px;">waHiid al-qarn</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Jerapah</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زرافة (ج) زرافات</span></td><td style="margin: 0px; padding: 5px 5px;">zaraafatun (j.) zaraafaatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Zebra</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حمار وحشي</span></td><td style="margin: 0px; padding: 5px 5px;">himaar waHši</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kangguru</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">كنغر</span></td><td style="margin: 0px; padding: 5px 5px;">kanġar</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Cheeta</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فهد (ج) فهود</span></td><td style="margin: 0px; padding: 5px 5px;">fahd (j.) fuhuud</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Serigala</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ذئب (ج) ذئاب</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">d</u>i'b (j.)&nbsp;<u style="margin: 0px; padding: 0px;">d</u>i'aab</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Beruang</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">دب&#1617; (ج) دببة</span></td><td style="margin: 0px; padding: 5px 5px;">dubb (j.) dibaba</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Harimau</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نمر (ج) نمور</span></td><td style="margin: 0px; padding: 5px 5px;">namir (j.) numuur</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Gajah</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فيل (ج) فيلة</span></td><td style="margin: 0px; padding: 5px 5px;">fiilun (j.) fiialatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Monyet</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قرد (ج) قرود</span></td><td style="margin: 0px; padding: 5px 5px;">qirdun (j.) quruudun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kelelawar</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">خفاش (ج) خفافيش</span></td><td style="margin: 0px; padding: 5px 5px;">khuffaaš (j.) khafaafiišun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Tupai</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سنجاب</span></td><td style="margin: 0px; padding: 5px 5px;">sinjaabun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Rubah</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ثعلب (ج) ثعالب</span></td><td style="margin: 0px; padding: 5px 5px;"><u>tsa'</u>labun (j.)&nbsp;<u style="margin: 0px; padding: 0px;">ts</u>a'aalibun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Rusa</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">غزال (ج) غزلة</span></td><td style="margin: 0px; padding: 5px 5px;">ġazaalun (j.) ġizlatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سمك (ج) أسماك</span></td><td style="margin: 0px; padding: 5px 5px;">samakun (j.) asmaakun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan paus</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حوت (ج) حيتان</span></td><td style="margin: 0px; padding: 5px 5px;">Huutun (j.) Hiitaanun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan hiu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قرش</span></td><td style="margin: 0px; padding: 5px 5px;">qirsyun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan Lumba2</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">دخس</span></td><td style="margin: 0px; padding: 5px 5px;">dukhasun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Gurita</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">أخطبوط (ج) اخطبوطات</span></td><td style="margin: 0px; padding: 5px 5px;">ukhthubuuthun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ubur-ubur</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قنديل البحر</span></td><td style="margin: 0px; padding: 5px 5px;">qandiil al-baHr</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Cum-cumi</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حب&#1617;ار</span></td><td style="margin: 0px; padding: 5px 5px;">Habbaarun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan pedang</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">أبو سيف</span></td><td style="margin: 0px; padding: 5px 5px;">abu saif</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Udang</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">روبيان</span></td><td style="margin: 0px; padding: 5px 5px;">ruubiyaanun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Udang</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سرطان بحري</span></td><td style="margin: 0px; padding: 5px 5px;">saraTaan baHri</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kepiting</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سرطان (ج) سرطانات</span></td><td style="margin: 0px; padding: 5px 5px;">saraTaan (j.) saraTaanaat</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Bintang laut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نجمة البحر</span></td><td style="margin: 0px; padding: 5px 5px;">najmat al-baHri</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Belut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ثعبان البحر</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">ts</u>u'baan al-baHri</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kuda laut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حصان البحر</span></td><td style="margin: 0px; padding: 5px 5px;">Hishaan al-baHri</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Anjing laut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عجل البحر</span></td><td style="margin: 0px; padding: 5px 5px;">'ijl al-baHr</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Beruang laut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فظ&#1617; (ج) أفظاظ</span></td><td style="margin: 0px; padding: 5px 5px;">fazhzhun (j.) afzhaazhun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan salmon</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">سالمون</span></td><td style="margin: 0px; padding: 5px 5px;">saalamuun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Singa laut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قرموط (ج) قراميط</span></td><td style="margin: 0px; padding: 5px 5px;">qarmuuthun (j.) qaraamiithun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ikan tuna</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">تن&#1617;</span></td><td style="margin: 0px; padding: 5px 5px;">tunnun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Serangga</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حشرة (ج) حشرات</span></td><td style="margin: 0px; padding: 5px 5px;">Hašara (j.) Hašaraat</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Nyamuk</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">بعوضة (ج) بعوض</span></td><td style="margin: 0px; padding: 5px 5px;">ba'uudhatun (pl) ba'uudhun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Lalat</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ذبابة (ج) ذباب</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">dz</u>ubaabun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Lebah</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نحلة (ج) نحل</span></td><td style="margin: 0px; padding: 5px 5px;">naHlatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Semut</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نملة (ج) نمل</span></td><td style="margin: 0px; padding: 5px 5px;">namlatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kecoa</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">صرصور</span></td><td style="margin: 0px; padding: 5px 5px;">SurSuur</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Tawon</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">دب&#1617;ور (ج) دبابير</span></td><td style="margin: 0px; padding: 5px 5px;">dabbuurun (j.) dabaabiirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Cacing</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">دودة (ج) دود</span></td><td style="margin: 0px; padding: 5px 5px;">duudatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kupu-kupu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فراشة (ج) فراش</span></td><td style="margin: 0px; padding: 5px 5px;">faraasyatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Laba-laba</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عنكبوت (ج) عناكب</span></td><td style="margin: 0px; padding: 5px 5px;">'ankabuut (j.) 'anaakibun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kalajengking</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">عقربة (ج) عقارب</span></td><td style="margin: 0px; padding: 5px 5px;">'aqraba (j.) 'aqaarib</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Ekor</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ذيل (ج) ذيول</span></td><td style="margin: 0px; padding: 5px 5px;"><u style="margin: 0px; padding: 0px;">dzi</u>ilun (j.)&nbsp;<u style="margin: 0px; padding: 0px;">dz</u>uyuulun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Cakar</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">قدم الحيوان</span></td><td style="margin: 0px; padding: 5px 5px;">qadam al-Hayawaani</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kuku</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حافر (ج) حوافر</span></td><td style="margin: 0px; padding: 5px 5px;">Haafirun (j.) Hawaafirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Kuku</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">مخلب (ج) مخالب</span></td><td style="margin: 0px; padding: 5px 5px;">makhlabun (j.) makhaalibun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Bulu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">فروة (ج) فراوي</span></td><td style="margin: 0px; padding: 5px 5px;">farwatun (j.) faraawiyun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Paruh</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">منقار (ج) مناقير</span></td><td style="margin: 0px; padding: 5px 5px;">minqaarun (j.) manaaqiirun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Sayap</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">جناح (ج) اجنحة</span></td><td style="margin: 0px; padding: 5px 5px;">jinaaHun (j.) ajniHatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Bulu</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ريشة (ج) ريش</span></td><td style="margin: 0px; padding: 5px 5px;">riisysyatun</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Sirip</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زعنفة (ج) زعانف</span></td><td style="margin: 0px; padding: 5px 5px;">za'nifatun (j.) za'aanifun</td>
+                </tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Mennyalak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">نبح - ينبح (نباح)</span></td><td style="margin: 0px; padding: 5px 5px;">nabaHa - yanbaHu (nubaaH)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Mengeong</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">ماء - يمؤ (مواء)</span></td><td style="margin: 0px; padding: 5px 5px;">maa'a - yamuu'u (muwaa')</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Menguak</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">خار - يخور (خوار)</span></td><td style="margin: 0px; padding: 5px 5px;">khaara - yakhuuru (khuwaar)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Berkicau</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زقزق - يزقزق (زقزقة)</span></td><td style="margin: 0px; padding: 5px 5px;">zaqzaqa - yazaqzaqu (zaqzaqa)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Berkicau</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زقزق - يزقزق (زقزقة)</span></td><td style="margin: 0px; padding: 5px 5px;">zaqzaqa - yazaqzaqu (zaqzaqa)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Meraung</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">زأر - يزأر (زئير)</span></td><td style="margin: 0px; padding: 5px 5px;">za'ara - yaza'aru (za'iir)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Berkoko</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">صاح - يصيح (صياح)</span></td><td style="margin: 0px; padding: 5px 5px;">SaaHa - yaSiiHu (SiyaaH)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Meringkik</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">شهق - يشهق (شهيق)</span></td><td style="margin: 0px; padding: 5px 5px;">šahaqa - yašhiqu (šahiiq)</td></tr>
+                <tr style="margin: 0px; padding: 0px;"><td style="margin: 0px; padding: 5px 5px;">Meringkik</td><td dir="rtl" style="margin: 0px; padding: 5px 5px;"><span class="arabic" style="font-size: 1.4em; margin: 0px; padding: 0px;">حمحم - يحمحم (حمحمة)</span></td><td style="margin: 0px; padding: 5px 5px;">HamHama - yaHamHamu (HamHama)</td></tr>
+                </tbody></table>
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#arah" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#rumahsakit" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="warna" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Warna
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <table width="100%" border="1" cellspacing="0" cellpadding="0"><div align="center">
+			
+                <tbody>
+                <tr>
+                    
+                    <th><span style="font-family: &quot;verdana&quot; , sans-serif;">Nama Warna</span></th>
+                    <th><span style="font-family: &quot;verdana&quot; , sans-serif;">Warna</span></th>
+                    <th><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold;">Mudzakkar ( م&#1615;ذ&#1614;ك&#1617;&#1614;ر&#1612; )</span></th>
+                    <th><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold;">Muannats ( م&#1615;ؤ&#1614;ن&#1617;&#1614;ث&#1612; )</span></th>
+                </tr>
+                <tr>
+                    
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Hitam</span></div>
+                    </td>
+                    <td bgcolor="black" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;س&#1618;و&#1614;د&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">س&#1614;و&#1618;د&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Putih</span></div>
+                    </td>
+                    <td bgcolor="white" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;ب&#1618;ي&#1614;ض&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ب&#1614;ي&#1618;ض&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Merah</span></div>
+                    </td>
+                    <td bgcolor="red" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;ح&#1618;م&#1614;ر&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ح&#1614;م&#1618;ر&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Biru</span></div>
+                    </td>
+                    <td bgcolor="blue" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;ز&#1618;ر&#1614;ق&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ز&#1614;ر&#1618;ق&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Hijau</span></div>
+                    </td>
+                    <td bgcolor="green" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;خ&#1618;ض&#1614;ر&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">خ&#1614;ض&#1618;ر&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Kuning</span></div>
+                    </td>
+                    <td bgcolor="yellow" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;ص&#1618;ف&#1614;ر&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ص&#1614;ف&#1618;ر&#1614;اء&#1615;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Orange</span></div>
+                    </td>
+                    <td bgcolor="orange" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ب&#1615;ر&#1618;ت&#1615;ق&#1614;ال&#1616;ي&#1617;&#1612;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ب&#1615;ر&#1618;ت&#1615;ق&#1614;ال&#1616;ي&#1617;&#1614;ة&#1612;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Ungu</span></div>
+                    </td>
+                    <td bgcolor="purple" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ب&#1614;ن&#1614;ف&#1618;س&#1614;ج&#1616;ي&#1617;&#1612;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ب&#1614;ن&#1614;ف&#1618;س&#1614;ج&#1616;ي&#1617;&#1614;ة&#1612;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Abu-Abu</span></div>
+                    </td>
+                    <td bgcolor="grey" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ر&#1614;م&#1614;اد&#1616;ي&#1617;&#1612;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">ر&#1614;م&#1614;اد&#1616;ي&#1617;&#1614;ة&#1612;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Merah Muda/Pink</span></div>
+                    </td>
+                    <td bgcolor="pink" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">و&#1614;ر&#1618;د&#1616;ي&#1617;&#1612;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">و&#1614;ر&#1618;د&#1616;ي&#1617;&#1614;ة&#1612;</span></td>
+                </tr>
+                <tr>
+                    
+                    <td style="text-align: center;"><div style="text-align: left;">
+                        <span style="font-family: &quot;verdana&quot; , sans-serif;">Coklat</span></div>
+                    </td>
+                    <td bgcolor="brown" style="text-align: center;"></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">أ&#1614;س&#1618;م&#1614;ر&#1615;</span></td>
+                    <td style="text-align: center;"><span style="font-family: &quot;verdana&quot; , KFGQPC Uthman Taha Naskh Bold; font-size: large;">س&#1614;م&#1618;ر&#1614;اء&#1615;</span></td>
+                </tr>
+                </tbody></table>
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#keluarga" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#tubuh" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="buah" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Buah Buahan
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+
+            <span style="font-size: large;">Buah buahan الف&#1614;و&#1614;اك&#1616;ه&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Apel &nbsp;&nbsp; &nbsp; الت&#1615;ف&#1617;&#1614;اح&#1615;</span><br />
+            <span style="font-size: large;">Salak&nbsp;&nbsp; &nbsp; &nbsp;س&#1614;ال&#1614;ق&#1618;</span><br />
+            <span style="font-size: large;">Rambutan &nbsp;&nbsp; &nbsp; ر&#1614;م&#1618;ب&#1615;و&#1618;ت&#1614;ن&#1618;</span><br />
+            <span style="font-size: large;">Buah jaetun &nbsp;&nbsp; &nbsp; الز&#1617;&#1614;ي&#1618;ت&#1615;و&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Manggis&nbsp;&nbsp; &nbsp; &nbsp;الم&#1614;ن&#1618;ج&#1616;س&#1615;</span><br />
+            <span style="font-size: large;">Pisang الم&#1614;و&#1618;ز&#1615;</span><br />
+            <span style="font-size: large;">Duku د&#1615;و&#1618;ك&#1615;و&#1618;</span><br />
+            <span style="font-size: large;">Buah pir&nbsp;&nbsp; &nbsp; &nbsp;الك&#1615;م&#1616;ث&#1618;ر&#1614;ى</span><br />
+            <span style="font-size: large;">Mangga&nbsp;&nbsp; &nbsp; &nbsp;الع&#1614;ن&#1618;ب&#1614;ة&#1615; \ ال&#1614;من&#1618;ج&#1614;ا&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Pepaya&nbsp;&nbsp; &nbsp; &nbsp;ب&#1614;اب&#1614;ايا&#1614;&nbsp;</span><br />
+            <span style="font-size: large;">Jambu&nbsp;&nbsp; &nbsp; &nbsp;الج&#1614;و&#1617;&#1614;اف&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Delima&nbsp;&nbsp; &nbsp; &nbsp;الر&#1617;&#1615;م&#1617;&#1614;ان&#1615;</span><br />
+            <span style="font-size: large;">Jeruk manis&nbsp;&nbsp; &nbsp; &nbsp;الب&#1615;ر&#1618;ط&#1615;ق&#1614;ال&#1615;</span><br />
+            <span style="font-size: large;">Jeruk nipis&nbsp;&nbsp; &nbsp; &nbsp;الل&#1617;&#1614;ي&#1618;م&#1615;و&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Buah tin&nbsp;&nbsp; &nbsp; &nbsp;الت&#1617;&#1616;ي&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;">Belewah&nbsp;&nbsp; &nbsp; &nbsp;الح&#1614;ب&#1618;ح&#1614;ب&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Semangka&nbsp;&nbsp; &nbsp; &nbsp;الب&#1616;ط&#1617;&#1616;ي&#1618;خ&#1615;</span><br />
+            <span style="font-size: large;">Tebu &nbsp; &nbsp; &nbsp;ق&#1614;ص&#1614;ب&#1615; الس&#1617;&#1615;ك&#1617;&#1614;ر&#1616;</span><br />
+            <span style="font-size: large;">Kurma &nbsp;&nbsp; &nbsp; الت&#1617;&#1614;م&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Kismis&nbsp;&nbsp; &nbsp; &nbsp;الز&#1617;&#1614;ب&#1616;ي&#1618;ب&#1615;</span><br />
+            <span style="font-size: large;">Nanas&nbsp;&nbsp; &nbsp; &nbsp;الأ&#1614;ن&#1614;ان&#1614;س&#1615;</span><br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#rumahsakit" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#petunjukjalan" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="tubuh" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Anggota Tubuh
+            </h3>
+            
+            <!--** isi content ** -->
+            <b><h4>Anggota Tubuh Bagian Atas</b></h4>
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Pelipis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الص&#1617;&#1615;د&#1618;غ&#1615;</span><br />
+            <span style="font-size: large;">Mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ي&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;">Kelopak mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;ف&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;">Bulu mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;اله&#1615;د&#1618;ب&#1615;</span><br />
+            <span style="font-size: large;">Biji mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الم&#1615;ق&#1618;ل&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Hitamnya mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1614;د&#1614;ق&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Alis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1614;اج&#1616;ب&#1615;</span><br />
+            <span style="font-size: large;">Air mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الد&#1614;م&#1618;ع&#1615;</span><br />
+            <span style="font-size: large;">Tahi mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الر&#1617;&#1614;م&#1614;ص&#1615;&#1615;</span><br />
+            <span style="font-size: large;">Hidung</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1614;ن&#1618;ف&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Lubang hidung&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الم&#1616;ن&#1618;خ&#1614;ر&#1615;</span><br />
+            <span style="font-size: large;">Ingus</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الم&#1615;خ&#1614;اط&#1615;</span><br />
+            <span style="font-size: large;">Gigi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الس&#1616;&#1617;ن&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Gusi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الل&#1616;&#1617;ث&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Gigi geraham</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الض&#1617;&#1616;ر&#1618;س&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Kepala &nbsp; &nbsp; &nbsp;الر&#1617;&#1614;أ&#1618;س&#1615;</span><br />
+            <span style="font-size: large;">Tengkorak kepala &nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">الج&#1615;م&#1618;ج&#1615;م</span><br />
+            <span style="font-size: large;">Otak</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الم&#1615;خ&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Akal</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ق&#1618;ل&#1615;</span><br />
+            <span style="font-size: large;">Muka</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الو&#1614;ج&#1618;ه&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Dahi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;ب&#1618;ه&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Pipi bagian atas</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الو&#1614;ج&#1618;ن&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Pipi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الخ&#1614;د&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Tulang rahang</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الف&#1614;ك&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Mulut</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الف&#1614;م&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Lidah</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الل&#1617;&#1616;س&#1614;ان&#1615;</span><br />
+            <span style="font-size: large;">Langit2</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1614;ن&#1614;ك&#1615;</span><br />
+            <span style="font-size: large;">Bibir</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الش&#1617;&#1614;ف&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Bibir atas</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الش&#1617;&#1614;ف&#1614;ة &#1615;ال&#1618;ع&#1615;ل&#1618;ي&#1614;ا</span><br />
+            <span style="font-size: large;">Bibir bawah&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الش&#1617;&#1614;ف&#1614;ة &#1615;الس&#1617;&#1615;ف&#1618;ل&#1617;&#1614;ي</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Kerongkongan</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1615;ل&#1618;ق&#1615;و&#1618;م&#1615;</span><br />
+            <span style="font-size: large;">Ludah</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الب&#1615;ص&#1614;اق&#1615;</span><br />
+            <span style="font-size: large;">Air liur</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الل&#1617;&#1615;ع&#1614;اب&#1615;</span><br />
+            <span style="font-size: large;">Dahak</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الن&#1617;&#1616;خ&#1614;ام&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Dagu</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الذ&#1617;&#1614;ق&#1614;ن&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Daun telinga</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ح&#1616;م&#1618;ل&#1614;ة &#1615;الأ&#1615;ذ&#1615;ن&#1616;</span><br />
+            <span style="font-size: large;">Cuping telinga&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">ش&#1614;ح&#1618;م&#1614;ة &#1615;الأ&#1615;ذ&#1615;ن&#1616;</span><br />
+            <span style="font-size: large;">Kotoran telinga</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ط&#1614;ب&#1618;ل&#1614;ة &#1615;الأ&#1615;ذ&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;&#1615;ن&#1616;</span><br />
+            <span style="font-size: large;">Leher</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1615;ن&#1615;ق&#1615;</span><br />
+            <span style="font-size: large;">Kumis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الش&#1617;&#1614;ار&#1616;ب&#1615;</span><br />
+            <span style="font-size: large;"><br /></span><span style="font-size: large;">Jenggot</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الل&#1617;&#1616;ح&#1618;ي&#1614;ة &#1615;</span><br />
+            <span style="font-size: large;">Jenggot di bawah bibir</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ن&#1618;ف&#1614;ق&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Cambang</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ار&#1616;ض&#1615;</span><br />
+            <span style="font-size: large;">Telinga</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1615;ذ&#1615;ن&#1615;</span><br />
+            <br />
+            <br />
+            <b><h4>Anggota Tubuh Tangan dan Kaki </b></h4>
+            <span style="font-size: large;">Tangan الي&#1614;د&#1615;</span><br />
+            <span style="font-size: large;">Bahu الك&#1614;ت&#1616;ف&#1615;</span><br />
+            <span style="font-size: large;">Ketiak الإ&#1616;ب&#1618;ط&#1615;</span><br />
+            <span style="font-size: large;">Telapak tangan الك&#1614;ف&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Jari الأ&#1615;ص&#1618;ب&#1615;ع&#1615;</span><br />
+            <br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Ibu jari الإب&#1618;ه&#1614;ام&#1615;</span><br />
+            <span style="font-size: large;">Jari manis الب&#1616;ن&#1618;ص&#1616;ر&#1615;</span><br />
+            <span style="font-size: large;">Jari kelingking الخ&#1616;ن&#1618;ص&#1614;ر&#1615;</span><br />
+            <span style="font-size: large;">Jari telunjuk الس&#1617;&#1614;ب&#1614;اب&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Jari tengah الو&#1615;س&#1618;ط&#1614;ى</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Lengan atas الع&#1614;ض&#1614;د&#1615;</span><br />
+            <span style="font-size: large;">Siku الم&#1616;ر&#1618;ف&#1614;ق&#1615;</span><br />
+            <span style="font-size: large;">Lengan bawah الس&#1617;&#1614;اع&#1616;د&#1615;</span><br />
+            <span style="font-size: large;">Pergelangan tangan الم&#1616;ع&#1618;ص&#1614;م&#1615;</span><br />
+            <span style="font-size: large;">Lengan الذ&#1616;&#1617;ر&#1614;اع&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Genggaman tangan ج&#1614;م&#1618;ع&#1615; الك&#1614;ف&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Kuku الظ&#1617;&#1615;ف&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;">Ujung jari الب&#1614;ن&#1614;ان&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Lutut الر&#1617;&#1615;ك&#1618;ب&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Betis الس&#1617;&#1614;اك&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Pangkal paha الو&#1614;ر&#1616;ك&#1615;</span><br />
+            <span style="font-size: large;">Paha الف&#1614;خ&#1616;د&#1615;</span><br />
+            <span style="font-size: large;">Telapak kaki ب&#1614;اط&#1616;ن&#1615; الق&#1614;د&#1614;م&#1616;</span><br />
+            <span style="font-size: large;">Tumit الع&#1614;ق&#1614;ب&#1615;</span><br />
+            <span style="font-size: large;">Mata kaki الك&#1614;ع&#1618;ب&#1615;</span><br />
+            <span style="font-size: large;">Kaki الر&#1617;&#1616;ج&#1618;ل&#1615;</span><br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#warna" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#katakerja" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="keluarga" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Anggota Keluarga
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <span style="font-size: large;">Keluarga &nbsp; &nbsp; &nbsp;الأ&#1615;س&#1618;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Keluarga</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ائ&#1616;ل&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Kakek</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;د&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Nenek</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;د&#1617;&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Ayah</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1614;ب&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Ayah tiri</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ز&#1614;و&#1618;ج&#1615; الأ&#1615;م&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Ibu</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1615;م&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Ibu tiri&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">ز&#1614;و&#1618;ج&#1615; الأ&#1614;ب&#1616;</span><br />
+            <span style="font-size: large;">Anak kecil</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الغ&#1615;لا&#1614;م&#1615;</span><br />
+            <span style="font-size: large;">Bayi&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الط&#1617;&#1616;ف&#1618;ل&#1615; / الص&#1617;&#1614;ب&#1616;ي&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Anak yatim</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الي&#1614;ت&#1616;ي&#1618;م&#1615;</span><br />
+            <span style="font-size: large;">Anak cucu&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الذ&#1617;&#1615;ر&#1617;&#1616;ي&#1617;&#1614;ة&#1615;\الن&#1617;&#1614;س&#1618;ل&#1615;</span><br />
+            <span style="font-size: large;">Anak p.r</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الب&#1616;ن&#1618;ت&#1615;</span><br />
+            <span style="font-size: large;">Anak l.k</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الإ&#1616;ب&#1618;ن&#1615;</span><br />
+            <span style="font-size: large;">Anak agkat</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الو&#1614;ل&#1614;د&#1615; الم&#1615;ت&#1614;ب&#1614;ن&#1617;&#1614;ي</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Anak sulung</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الو&#1614;ل&#1614;د&#1615; الأ&#1614;ك&#1618;ب&#1614;ر&#1615;</span><br />
+            <span style="font-size: large;">Anak bungsu&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الو&#1614;ل&#1614;د&#1615; الأ&#1614;ص&#1618;غ&#1614;ر&#1615;</span><br />
+            <span style="font-size: large;">Saudara l.k </span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1614;خ&#1615; الش&#1617;&#1614;ق&#1616;ي&#1618;ق&#1615;</span><br />
+            <span style="font-size: large;">Sauara p.r </span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1615;خ&#1618;ت&#1615; الش&#1617;&#1614;ق&#1616;ي&#1618;ق&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Abang</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1614;خ&#1615; الك&#1614;ب&#1616;ي&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Adik</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1614;خ&#1615; الص&#1617;&#1614;غ&#1616;ي&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;">Pemuda</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الف&#1614;ت&#1614;ى</span><br />
+            <span style="font-size: large;">Pemudi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الف&#1614;ت&#1614;اة&#1615;</span><br />
+            <span style="font-size: large;">Bujang</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ز&#1614;ب&#1615;</span><br />
+            <span style="font-size: large;">Kakak p.r</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الأ&#1615;خ&#1618;ت&#1615; الك&#1614;ب&#1616;ي&#1618;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Paman &nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ال&#1618;ع&#1614;م&#1617;&#1615;</span><br />
+            <span style="font-size: large;">Bibi &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ال&#1618;ع&#1614;م&#1617;&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Sepupu l.k</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;إ&#1616;ب&#1618;ن&#1615; الأ&#1615;م&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Sepupu p.r</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ب&#1616;ن&#1618;ت&#1615; الأ&#1615;م&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Suami\Istri&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الز&#1617;&#1614;و&#1618;ج&#1615; و&#1614; الز&#1617;&#1614;و&#1618;ج&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Gadis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الع&#1614;ذ&#1618;ر&#1614;اء&#1615;</span><br />
+            <span style="font-size: large;">Perawan</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ال&#1618;ب&#1616;ك&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;">Kepala Keluarga&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">ر&#1614;ئ&#1616;ي&#1618;س&#1615; الع&#1614;ائ&#1616;ل&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Mertua</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1614;م&#1615; \ الح&#1614;ام&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Menantu</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الخ&#1614;ت&#1614;ن&#1615; \ الخ&#1614;ت&#1614;ن&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Kembar&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الت&#1617;&#1614;و&#1618;أ&#1614;م&#1615;</span><br />
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#hitungan" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#warna" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="rempah" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Sayuran dan Rempah-rempah
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <span style="font-size: large;">Sayur sayuran dan rempah-rempah الخ&#1615;ض&#1618;ر&#1615;و&#1614;ات&#1615; و&#1614; الت&#1617;&#1614;و&#1614;اب&#1616;ل&#1615;</span><br />
+            <span style="font-size: large;">Sayur sayuran&nbsp;&nbsp; &nbsp; &nbsp;الخ&#1615;ض&#1618;ر&#1614;ات&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Rempah rempah&nbsp;&nbsp; &nbsp; &nbsp;الت&#1617;&#1614;و&#1614;اب&#1616;ل&#1615;</span><br />
+            <span style="font-size: large;">Kentan&nbsp;&nbsp; &nbsp; g الب&#1614;ط&#1614;اط&#1616;س&#1615;</span><br />
+            <span style="font-size: large;">Timun &nbsp;&nbsp; &nbsp; الخ&#1616;ي&#1614;ار&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Wortel &nbsp;&nbsp; &nbsp; الج&#1616;ز&#1618;ر&#1615;</span><br />
+            <span style="font-size: large;">Kelapa&nbsp;&nbsp; &nbsp; &nbsp;الن&#1617;&#1614;ار&#1614;ج&#1616;ي&#1618;ل&#1615;</span><br />
+            <span style="font-size: large;">Waluh&nbsp;&nbsp; &nbsp; &nbsp;الق&#1614;ر&#1618;ع&#1615;</span><br />
+            <span style="font-size: large;">Buncis &nbsp;&nbsp; &nbsp; الف&#1614;اص&#1615;و&#1618;ل&#1616;ي&#1614;ا</span><br />
+            <span style="font-size: large;">Terong &nbsp;&nbsp; &nbsp; الب&#1614;اذ&#1616;ن&#1618;ج&#1614;ان&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Daun saledri&nbsp;&nbsp; &nbsp; &nbsp;الخ&#1614;س&#1617;&nbsp;</span><br />
+            <span style="font-size: large;">Lobak&nbsp;&nbsp; &nbsp; &nbsp;الف&#1616;ج&#1618;ل&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Kubis &nbsp;&nbsp; &nbsp; الك&#1615;ر&#1615;ن&#1618;ب&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Merica&nbsp;&nbsp; &nbsp; &nbsp;الق&#1616;ر&#1618;ف&#1614;ة&#1615; / ف&#1616;ل&#1618;ف&#1616;ل&#1612; ح&#1614;ار&#1617;&#1612;</span><br />
+            <span style="font-size: large;">Cengkeh &nbsp;&nbsp; &nbsp; الق&#1615;ر&#1615;ن&#1618;ف&#1615;ل&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Jahe &nbsp;&nbsp; &nbsp; الز&#1617;&#1614;ن&#1618;ج&#1614;ب&#1616;ي&#1618;ل&#1615;</span><br />
+            <span style="font-size: large;">Kunir&nbsp;&nbsp; &nbsp; &nbsp;الك&#1615;ر&#1618;ك&#1615;م&#1615;</span><br />
+            <span style="font-size: large;">Lombok&nbsp;&nbsp; &nbsp; &nbsp;الف&#1616;ل&#1618;ف&#1616;ل&#1615; الأ&#1614;ح&#1618;م&#1614;ر&#1615;س&#1615;</span><br />
+            <span style="font-size: large;">Ketela&nbsp;&nbsp; &nbsp; &nbsp;الب&#1616;س&#1618;ط&#1614;اس&#1615; / الط&#1617;&#1614;ب&#1616;ي&#1615;و&#1618;ك&#1615;</span><br />
+            <span style="font-size: large;">Tomat&nbsp;&nbsp; &nbsp; &nbsp;الط&#1617;&#1614;م&#1614;اط&#1616;م&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Sawi &nbsp;&nbsp; &nbsp; الخ&#1614;ر&#1618;د&#1614;ل&#1615;</span><br />
+            <span style="font-size: large;">Ketumbar &nbsp;&nbsp; &nbsp; الك&#1615;ز&#1618;ب&#1614;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Bawang putih&nbsp;&nbsp; &nbsp; &nbsp;الث&#1617;&#1614;و&#1618;م&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Bawang merah &nbsp;&nbsp; &nbsp; الب&#1614;ص&#1614;ل&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Cabe &nbsp;&nbsp; &nbsp; الف&#1616;ل&#1618;ف&#1616;ل&#1615;</span><br />
+            <br />
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#kelas" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#olahraga" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="olahraga" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Tentang Olahraga
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <span style="font-size: large;">Olah raga الر&#1617;&#1616;ي&#1614;اض&#1614;ة&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Lapangan الم&#1614;ي&#1618;د&#1614;ان&#1615;</span><br />
+            <span style="font-size: large;">Penggemar olah raga م&#1614;ي&#1617;&#1614;ال&#1612; ل&#1616;لر&#1617;&#1616;ي&#1614;اض&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Gelanggang oalah raga م&#1614;ل&#1618;ع&#1614;ب&#1615; الر&#1617;&#1616;ي&#1614;اض&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Bola الك&#1615;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Pingpong ك&#1615;ر&#1614;ة&#1615; الط&#1617;&#1614;او&#1615;ل&#1614;ة&#1616; / ك&#1615;ر&#1614;ة&#1615; ال&#1618;م&#1614;ك&#1618;ت&#1614;ب&#1616;</span><br />
+            <span style="font-size: large;">Voli ball ك&#1615;ر&#1614;ة&#1615; الي&#1614;د&#1616; / ك&#1615;ر&#1614;ة&#1615; ال&#1618;ه&#1614;و&#1614;ائ&#1616;ي&#1617;&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Tennis ت&#1616;ي&#1618;ن&#1616;س&#1618;&nbsp;</span><br />
+            <span style="font-size: large;">Lempar lembing ر&#1614;م&#1618;ي&#1615; الر&#1617;&#1615;م&#1618;ح&#1616;</span><br />
+            <span style="font-size: large;">Tolak Peluru ر&#1614;م&#1618;ي&#1615; الر&#1617;&#1614;ص&#1614;اص&#1616;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Gawang الم&#1614;ر&#1618;م&#1614;ى</span><br />
+            <span style="font-size: large;">Basket ك&#1615;ر&#1614;ة&#1615; الس&#1617;&#1614;ل&#1617;&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Pertandingan الم&#1615;ب&#1614;ار&#1614;اة&#1615;</span><br />
+            <span style="font-size: large;">Perlombaan الم&#1615;س&#1614;اب&#1614;ق&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Naik kuda ر&#1615;ك&#1615;و&#1618;ب&#1615; الخ&#1614;ي&#1618;ل&#1616;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Sepak bola ك&#1615;ر&#1614;ة&#1615; الق&#1614;د&#1614;م&#1616;</span><br />
+            <span style="font-size: large;">Sayap kiri الج&#1614;ن&#1614;اح&#1615; الأ&#1614;ي&#1618;س&#1614;ر&#1615;&nbsp;</span><br />
+            <span style="font-size: large;">Penyerang الم&#1615;ه&#1614;اج&#1616;م&#1615;</span><br />
+            <span style="font-size: large;">Penjaga gawang ح&#1614;ار&#1616;س&#1615; الم&#1614;ر&#1618;م&#1614;ى&nbsp;</span><br />
+            <span style="font-size: large;">Sayap kanan الج&#1614;ن&#1614;اح&#1615; الأ&#1614;ي&#1618;م&#1614;ان&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Gulat الم&#1615;ص&#1614;ار&#1614;ع&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Beladiri د&#1616;ف&#1614;اع&#1615; الن&#1617;&#1614;ف&#1618;س&#1616;&nbsp;</span><br />
+            <span style="font-size: large;">Wasit الح&#1614;اك&#1616;م&#1615;/الف&#1614;ي&#1618;ص&#1614;ل&#1615;</span><br />
+            <span style="font-size: large;">Tinju الم&#1615;لا&#1614;ك&#1614;م&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Piala الك&#1614;أ&#1618;س&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Piala Dunia ك&#1614;أ&#1618;س&#1615; ال&#1618;ع&#1614;ال&#1614;م&#1616;&nbsp;</span><br />
+            <span style="font-size: large;">Pemain cadangan اللا&#1617;&#1614;ع&#1616;ب&#1615; الا&#1616;ح&#1618;ط&#1616;ي&#1614;اط&#1616;ي&#1617;</span><br />
+            <span style="font-size: large;">Bulu tangkis ك&#1615;ر&#1614;ة&#1615; الر&#1617;&#1616;ي&#1618;ش&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Memasang tenda ن&#1614;ص&#1618;ب&#1615; الخ&#1614;&#1614;ي&#1618;م&#1614;ة&#1616;</span><br />
+            <span style="font-size: large;">Renang الس&#1617;&#1616;ب&#1614;اح&#1614;ة&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Balap sepeda س&#1616;ب&#1614;اق&#1615; الد&#1617;&#1614;ر&#1617;&#1617;&#1614;اج&#1614;ة&#1616;&nbsp;</span><br />
+            <br />
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#rempah" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#kendaraan" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+<!--Awal Halaman-->
+<div data-role="page" id="kendaraan" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Tentang Kendaraan
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <span style="font-size: large;">Becak &nbsp; &nbsp; &nbsp;الب&#1616;ت&#1618;ش&#1614;اء</span><br />
+            <span style="font-size: large;">Bus</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الح&#1614;اف&#1616;ل&#1614;ة&#1615;/ا&#1615;و&#1618;ت&#1615;و&#1618;ب&#1615;س&#1618;</span><br />
+            <span style="font-size: large;">Mobil</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الس&#1617;&#1614;ي&#1614;ار&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Truk</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;س&#1614;ي&#1617;&#1614;ار&#1614;ة&#1615; الن&#1617;&#1614;ق&#1618;ل&#1616;/الش&#1617;&#1614;اح&#1616;ن&#1614;ة&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Sepeda</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الد&#1617;&#1614;ر&#1614;اج&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Sepeda motor</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;و&#1617;&#1614;ال&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Tank</span><span style="font-size: large;">&nbsp;&nbsp; &nbsp;&nbsp;</span><span style="font-size: large;">&nbsp;الد&#1617;&#1614;ب&#1614;اب&#1614;ة&#1615;</span><br /><span style="font-size: large;">Kapal terbang</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الط&#1617;&#1614;ي&#1617;&#1614;ار&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Helicopter</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;ه&#1616;ي&#1618;ل&#1616;ك&#1615;و&#1618;ب&#1618;ت&#1614;ار&#1618;</span><br />
+            <span style="font-size: large;">Taksi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الت&#1617;&#1614;ك&#1618;س&#1616;ى</span><br />
+            <span style="font-size: large;">Mobil balap</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;س&#1614;ي&#1617;&#1614;ار&#1614;ة&#1615; الس&#1617;&#1616;ب&#1614;اق&#1616;</span><br />
+            <span style="font-size: large;">Kereta api</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الق&#1616;ط&#1614;ار&#1615;&nbsp;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Gerobak&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">الع&#1614;ر&#1614;ب&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Mobil tanki&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">س&#1614;ي&#1617;&#1614;ار&#1614;ة&#1615; الص&#1617;&#1614;ه&#1618;ر&#1616;ي&#1618;ج&#1616;</span><br />
+            <span style="font-size: large;">Ambulans</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;س&#1614;ي&#1617;&#1614;ار&#1614;ة&#1615; الإ&#1616;س&#1618;ع&#1614;اف&#1616;</span><br />
+            <span style="font-size: large;">Perahu layar</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الس&#1617;&#1614;ف&#1616;ي&#1618;ن&#1614;ة&#1615; الش&#1617;&#1616;ر&#1614;اع&#1616;ي&#1617;&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Kapal laut</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الب&#1614;اخ&#1616;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Perahu</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الس&#1617;&#1614;ف&#1616;ي&#1618;ن&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Kapal selam</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp;الغ&#1614;و&#1617;&#1614;اص&#1614;ة&#1615;</span><br />
+            <br />
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#olahraga" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#penyakit" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="penyakit" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Tentang Penyakit
+            </h3>
+            </strong>
+            <!--** isi content ** -->
+            <span style="font-size: large;">Penyakit &nbsp; &nbsp; &nbsp;الد&#1617;&#1614;اء&#1615; / ا&#1618;لأ&#1614;لم&#1614; &#1615;/ ال&#1618;م&#1614;ر&#1614;ض&#1615;</span><br />
+            <span style="font-size: large;">Bisul</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الد&#1617;&#1615;م&#1617;&#1614;ل&#1615;</span><br />
+            <span style="font-size: large;">Panu&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">الب&#1614;ه&#1614;ق&#1615;</span><br />
+            <span style="font-size: large;">Bengkak</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الو&#1614;ر&#1614;م&#1615;/الا&#1616;ن&#1618;ت&#1616;ف&#1614;اح&#1615;</span><br />
+            <span style="font-size: large;">Cacar</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;د&#1614;ر&#1616;ي</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Penyakit panas&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">الح&#1615;م&#1617;&#1614;ى&nbsp;</span><br />
+            <span style="font-size: large;">Sakit kepala&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">و&#1614;ج&#1618;ع&#1615; الر&#1617;&#1614;أ&#1618;س&#1616;&nbsp;</span><br />
+            <span style="font-size: large;">Pusing</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الص&#1617;&#1615;د&#1614;اع&#1615;</span><br />
+            <span style="font-size: large;">Encok</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;د&#1614;اء&#1615; الم&#1615;ف&#1614;اص&#1616;ل&#1616;&nbsp;</span><br />
+            <span style="font-size: large;">Malaria</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الم&#1614;لا&#1614;ر&#1616;ي&#1614;ا</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Sesak napas</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;ض&#1614;ي&#1618;ق&#1615; الن&#1617;&#1614;ف&#1618;س&#1616;</span><br />
+            <span style="font-size: large;">Kudis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;ر&#1614;ب&#1615;</span><br />
+            <span style="font-size: large;">Jerawat</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الب&#1614;ث&#1618;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Sakit gigi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;و&#1614;ج&#1618;ع&#1615; الس&#1617;&#1616;ن&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Batuk</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الس&#1617;&#1615;ع&#1617;&#1614;ال&#1615;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Penyakit jantung &nbsp; &nbsp; &nbsp;م&#1614;ر&#1614;ض&#1615; الق&#1614;ل&#1618;ب&#1616;</span><br />
+            <span style="font-size: large;">Mulas</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الم&#1614;غ&#1618;ص&#1615;</span><br />
+            <span style="font-size: large;">Gondok</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الج&#1614;د&#1614;ر&#1614;ة&#1615;</span><br />
+            <span style="font-size: large;">Muntah</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الق&#1614;ي&#1618;ئ&#1615;</span><br />
+            <span style="font-size: large;">Kurang darah</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;ف&#1614;ق&#1618;ر&#1615; الد&#1617;&#1614;م&#1617;&#1616;</span><br />
+            <span style="font-size: large;"><br /></span>
+            <span style="font-size: large;">Pegal linu&nbsp;</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">الأ&#1614;ل&#1614;م&#1615; ف&#1616;ى الع&#1614;ظ&#1618;م&#1616;</span><br />
+            <span style="font-size: large;">Sakit mata</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الر&#1617;&#1614;م&#1614;د&#1615;</span><br />
+            <span style="font-size: large;">Kencing manis</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;م&#1614;ر&#1614;ض&#1615; الس&#1617;&#1615;ك&#1617;&#1614;ر&#1616;</span><br />
+            <span style="font-size: large;">Tekanan darah tinggi</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;ض&#1614;غ&#1618;ط&#1615; الد&#1617;&#1614;م&#1617;&#1616;</span><br />
+            <span style="font-size: large;">Masuk angin/pilek</span><span style="font-size: large;">&nbsp;</span><span style="font-size: large;">&nbsp; &nbsp; &nbsp;</span><span style="font-size: large;">&nbsp;الز&#1617;&#1615;ك&#1617;&#1614;ام&nbsp;</span><br />
+
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#kendaraan" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+                <li><a href="#hari" data-icon="arrow-r"></a></li>
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+<!--Awal Halaman-->
+<div data-role="page" id="hari" data-theme="d">
+    <div data-role="header" data-position="none" data-tap-toggle="false" data-theme="b"><h1>Kosakata Bahasa Arab</h1></div>
+    <div data-role="content">
+        <center>
+            <h3>Nama Hari dan Bulan</h3>
+            </strong>
+            <!--** isi content ** -->
+            <b><span style="color: magenta;">A. Nama-Nama Hari</span></b><br />
+            <br />
+            Hari Ahad (يوم الأحد) = Yaumul Ahadi<br />
+            Hari Senin (يوم الا&#1616;ثنين) = Yaumul Itsnayni<span class="">&nbsp;</span><br />
+            <span class="">Hari Selasa (يوم الث&#1617;لاثاء) = Yaumuts Tsulaatsaai&nbsp;</span><br />
+            <span class="">Hari
+Rabu (يوم الأربعاء) = Yaumul Arbi'aai&nbsp;</span><br />
+            <span class="">Hari Kamis (يوم الخميس) =
+Yaumul Khomiis&nbsp;</span><br />
+            <span class="">Hari Jum'at (يوم الجمعة) = Yaumul Jumu'ati&nbsp;</span><br />
+            <span class="">Hari Sabtu (يوم الس&#1617;بت) = Yaumus Sabti&nbsp;</span><br />
+            <br />
+            <a name='more'></a><br /><br />
+            <span style="background-color: white;"><span style="color: magenta;"><b><span class="">B. Nama-Nama Bulan
+Masehi&nbsp;</span></b></span></span><br />
+            <br />
+            <span class="">Januari (يناير) = Yanaayiru&nbsp;</span><br />
+            <span class="">Februari (فبراير) =
+Fibrooyiru&nbsp;</span><br />
+            <span class="">Maret (مارس) = Maarisun&nbsp;</span><br />
+            <span class="">April (أبريل) =
+Abriilu&nbsp;</span><br />
+            <span class="">Mei (مايو) = Maayuu&nbsp;</span><br />
+            <span class="">Juni (يونيو) = Yuuniyuu</span><br />
+            <span class="">Juli (يوليو) = Yuuliyuu</span><br />
+            <span class="">Agustus (أغسطس) = Aghusthusu&nbsp;</span><br />
+            <span class="">September (سبتمبر) = Sibtimbaru</span><br />
+            <span class="">Oktober (أكتوبر) =
+Uktuubaru&nbsp;</span><br />
+            <span class="">November (نوفمبر) = Nuufimbaru&nbsp;</span><br />
+            <span class="">Desember
+(ديسمبر) = Diisimbaru&nbsp;</span><br />
+            <br />
+            <span class="">Istilah Masehi dalam bahasa 'Arob adalah
+Al-Miilaadiyyatu (الميلادي&#1617;ة).&nbsp;</span><br />
+            <br />
+            <span style="color: magenta;"><b><span class="">C. Nama-Nama Bulan Hijriyyah</span></b></span><br />
+            <br />
+            <span class="">Muharrom (محر&#1617;م)&nbsp;</span><br />
+            <span class="">Shofar (صفر)&nbsp;</span><br />
+            <span class="">Robii'ul Awwal (ربيع
+الأو&#1617;ل)&nbsp;</span><br />
+            <span class="">Robii'uts Tsaaniy (ربيع الث&#1617;اني)&nbsp;</span><br />
+            <span class="">Jumaadaal
+Uulaa (جمادى الأولى)</span><br />
+            <span class="">Jumaadaats Tsaaniyati (جمادى الث&#1617;اني&#1617;ة)</span><br />
+            <span class="">Rojab (رجب)&nbsp;</span><br />
+            <span class="">Sya'baan (شعبان)</span><br />
+            <span class="">Romadhoon (رمضان)&nbsp;</span><br />
+            <span class="">Syawwaal (شو&#1617;ال)</span><br />
+            <span class="">Dzuulqa'dah (ذو القعدة)</span><br />
+            <span class="">Dzuulhijjah (ذو الحج&#1617;ة)</span><br />
+            <br />
+            <br />
+        </center>
+    </div> <!--Akhir Konten-->
+
+    <div data-role="footer" data-theme="b" data-position="none" style="overflow:hidden;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#penyakit" data-icon="arrow-l"></a></li>
+                <li><a href="#halutama" data-icon="grid"></a></li>
+
+            </ul>
+        </div><!-- /footer -->
+    </div>
+</div>
+<!--Akhir Halaman-->
+
+
+
+<script>
+	$("[data-role=header], [data-role=footer]")
+    .toggleClass("ui-screen-hidden", function () {
+    $.mobile.resetActivePageHeight();
+});
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
